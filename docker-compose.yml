@@ -1,0 +1,11 @@
+services:
+  goba-precinct:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: goba-precinct
+    ports:
+      - "4301:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
