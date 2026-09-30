@@ -191,7 +191,20 @@ export default function HomePage() {
                     ))}
                   </ul>
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {item.id !== "social" ? (
+                    {item.id === "apartments" ? (
+                      <>
+                        <Link href="/gallery#apartments">
+                          <Button size="sm" variant="secondary">
+                            View plans
+                          </Button>
+                        </Link>
+                        <Link href="/contact?intent=purchase">
+                          <Button size="sm" variant="accent">
+                            Enquire to purchase
+                          </Button>
+                        </Link>
+                      </>
+                    ) : item.id !== "social" ? (
                       <Link href="/contact?intent=purchase">
                         <Button size="sm" variant="accent">
                           Enquire to purchase

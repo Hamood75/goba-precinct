@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ApartmentSheets } from "@/components/gallery/apartment-sheets";
 import { GalleryGrid } from "@/components/gallery/gallery-grid";
 import { PROJECT_GALLERY } from "@/lib/project-gallery";
 import { Button } from "@/components/ui/button";
@@ -17,8 +18,9 @@ export default function GalleryPage() {
         <SectionHeading
           eyebrow="Gallery"
           title="See the precinct unfold"
-          description="Gate houses, home designs, masterplan drawings, and architectural vision for Goba Eco Precinct. Click any image to preview."
+          description="Apartment drawings are shown page by page. Other plans and renders open in a large preview when you click them."
         />
+        <ApartmentSheets />
         <GalleryGrid items={PROJECT_GALLERY} />
 
         <div className="mt-14 border border-border bg-surface-warm px-6 py-10 md:px-10">
