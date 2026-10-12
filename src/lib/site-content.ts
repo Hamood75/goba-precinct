@@ -2,9 +2,9 @@ import { DEFAULT_ABOUT, DEFAULT_SUSTAINABILITY } from "@/lib/cms-content";
 
 export const SITE = {
   name: "Goba Eco Precinct",
-  phone: "+2550000010011",
-  phoneHref: "tel:+2550000010011",
-  email: "hello@gobaeco.com",
+  phone: "0754710450",
+  phoneHref: "tel:+255754710450",
+  email: "Info@idea.co.tz",
   mapsUrl: "https://maps.app.goo.gl/DAq5MoKoV4uptpyJ9",
   address: "Goba Eco Estate",
 };
