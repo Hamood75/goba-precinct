@@ -5,16 +5,6 @@ import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
 const SHEETS = [
   {
-    title: "Lower level",
-    detail: "Parking, stairs, and the site boundary",
-    imageUrl: "/gallery/apartments-lower-level.png",
-  },
-  {
-    title: "Ground floor",
-    detail: "Apartment blocks, elevation, and communal court",
-    imageUrl: "/gallery/apartments-ground-floor.png",
-  },
-  {
     title: "Units & roof",
     detail: "Unit A, Unit B, and the communal roof",
     imageUrl: "/gallery/apartments-units.png",
@@ -74,7 +64,7 @@ export function ApartmentSheets() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">Apartment</p>
           <h2 className="mt-2 font-display text-3xl font-bold text-primary">Apartment drawings</h2>
           <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-            Four sheets from the apartment presentation. Choose a page, then click the drawing to zoom.
+            Unit plans and exterior views from the apartment presentation. Choose a page, then click the drawing to zoom.
           </p>
         </div>
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">
@@ -82,7 +72,7 @@ export function ApartmentSheets() {
         </p>
       </div>
 
-      <div className="mt-6 grid grid-cols-2 gap-2 md:grid-cols-4">
+      <div className="mt-6 grid grid-cols-2 gap-2">
         {SHEETS.map((item, sheetIndex) => (
           <button
             key={item.imageUrl}
@@ -167,7 +157,7 @@ export function ApartmentSheets() {
         </button>
       </div>
 
-      <div className="mt-5 grid grid-cols-4 gap-2">
+      <div className="mt-5 grid grid-cols-2 gap-2">
         {SHEETS.map((item, sheetIndex) => (
           <button
             key={`${item.imageUrl}-thumb`}
